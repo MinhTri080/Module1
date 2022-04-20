@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let year = parseInt(prompt('enter a year'));
+        // if (year % 4 == 0) {
+        //     if (year % 100 == 0) {
+        //         if (year % 400 == 0) {
+        //             alert(year + "namnhuan");
+        //         }
+        //         else {
+        //             alert(year + "namkonhuan");
+        //         }
+        //     } else {
+        //         alert(year + "namnhuan");
+        //     }
+        // } else {
+        // //     alert(year + "namkonhuan");
+        // }
+
+
+        // let year = parseInt(prompt('enter a year'));
+        // let nam_nhuan = false;
+        // if (year % 4 == 0) {
+        //     if (year % 100 == 0) {
+        //         if (year % 400 == 0) {
+        //             nam_nhuan = true;
+
+        //         }
+        //         else {
+        //             nam_nhuan = true;
+        //         }
+        //     }
+        // }
+        // if (nam_nhuan) {
+        //     alert(nam_nhuan + 'nam_nhuan');
+        // } else {
+        //     alert(nam_nhuan + 'nam_ko_nhuan');
+        // }
+
+
+
+        let year = parseInt(prompt('nhập số năm'));
+        if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
+            alert('năm nhuận')
+            console.log('nam_nhuan')
+        }
+        else {
+            alert(' năm không nhuận')
+            console.log('nam_ko_nhuan')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+img {
+    display: block;
+    height: 110px;
+    width: 600px;
+    padding: 2px;
+    margin: 1em auto;
+    box-shadow: 4px 4px 4px black;
+}

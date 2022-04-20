@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input class="numBer1"  >
+    <input class="numBer2 "><br>
+    <button onclick="cong()">Addition(+) </button>
+    <button onclick="tru()">Addition(-) </button>
+    <button onclick="nhan()">Addition(*) </button>
+    <button onclick="chia()">Addition(/) </button>
+    <br>
+    <p>Result: </p>
+    <p class="result"></p>
+
+</body>
+<script>
+    function cong() {
+        let numberOne = parseInt(document.querySelector('.numBer1').value);
+        let numbertwo = parseInt(document.querySelector('.numBer2').value);
+        let result = numberOne + numbertwo;
+        document.querySelector(".result").innerHTML = result;
+    }
+    function tru() {
+        let numberOne = parseInt(document.querySelector('.numBer1').value);
+        let numbertwo = parseInt(document.querySelector('.numBer2').value);
+        let result = numberOne - numbertwo;
+        document.querySelector(".result").innerHTML = result;
+    }
+
+    function nhan() {
+        let numberOne = parseInt(document.querySelector('.numBer1').value);
+        let numbertwo = parseInt(document.querySelector('.numBer2').value);
+        let result = numberOne * numbertwo;
+        document.querySelector(".result").innerHTML = result;
+    }
+
+    function chia() {
+        let numberOne = parseInt(document.querySelector('.numBer1').value);
+        let numbertwo = parseInt(document.querySelector('.numBer2').value);
+        let result = numberOne / numbertwo;
+        document.querySelector(".result").innerHTML = result;
+    }
+</script>
+</html>
