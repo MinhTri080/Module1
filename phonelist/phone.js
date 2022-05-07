@@ -55,3 +55,4 @@ function edit(index){
     tensanpham[index] = nameEdit;
     nhapSanpham();
 }
+funtion timkiem(timkiem)

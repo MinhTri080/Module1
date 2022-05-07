@@ -1,0 +1,16 @@
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.d_none {
+    display: none;
+}

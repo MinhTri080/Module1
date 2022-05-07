@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>QUẢN LÝ SẢN PHẨM ĐIỆN THOẠI</h1>
+        </div>
+        <div class="form-group">
+
+            <div class="form-add add-none">
+                <div class="addName">
+                    <label for="addName">Nhập tên sản phẩm thêm vào :</label>
+                    <input type="text" id="addName">
+                </div>
+                <div class="addPrice">
+                    <label for="addPrice">Nhập giá sản phẩm thêm vào:</label>
+                    <input type="number" id="addPrice">
+                </div>
+                <div class="addQuantity">
+                    <label for="addQuantity">Nhập số lượng sản phẩm thêm vào:</label>
+                    <input type="number" id="addQuantity">
+                </div>
+                <div>
+                    <button type="button" onclick="addProduct()">Update</button>
+                    <button type="button" onclick="reset()">Cancel</button>
+                </div>
+            </div>
+            <div class="form-edit edit-none">
+                <div class="editName">
+                    <label for="editName">Nhập tên sản phẩm muốn chỉnh sửa :</label>
+                    <input type="text" id="editName">
+                </div>
+                <div class="editPrice">
+                    <label for="editPrice">Nhập giá sản phẩm muốn chỉnh sửa :</label>
+                    <input type="number" id="editPrice">
+                </div>
+                <div class="editQuantity">
+                    <label for="editQuantity">Nhập số lượng sản phẩm muốn chỉnh sửa:</label>
+                    <input type="number" id="editQuantity">
+                </div>
+                <div>
+                    <button type="button" onclick="editProduct()">Update</button>
+                    <button type="button" onclick="reset()">Cancel</button>
+                </div>
+            </div>
+            <div class="timkiem">
+                <div class="search">
+                    <label for="search">Tìm kiếm:</label>
+                    <input type="text" id="search">
+                </div>
+                <div class="addSP">
+                    <button type="button" onclick="btnAdd()">Thêm sản phẩm</button>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <table class="table-product" border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Iphone6</td>
+                        <td>300000</td>
+                        <td>5</td>
+                        <td>
+                            <button>Chỉnh sửa</button>
+                            <button>Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+<script src="phone.js"></script>
+
+</html>
